@@ -1,0 +1,24 @@
+{
+  "name": "back-end",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "nodemon -r dotenv/config ./bin/www",
+    "createTable": "node -r dotenv/config db/scripts/createTable.js",
+    "populateTable": "node -r dotenv/config db/scripts/populateTable.js",
+    "dropTable": "node -r dotenv/config db/scripts/dropTable.js"
+  },
+  "dependencies": {
+    "cookie-parser": "~1.4.4",
+    "cors": "^2.8.5",
+    "debug": "~2.6.9",
+    "dotenv": "^8.2.0",
+    "express": "~4.16.1",
+    "morgan": "~1.9.1",
+    "nodemon": "^2.0.6",
+    "pg": "^8.4.2"
+  },
+  "engines": {
+    "node": "12.19.0"
+  }
+}
